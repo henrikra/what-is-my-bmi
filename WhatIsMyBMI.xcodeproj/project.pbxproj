@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					524A85651E228C21005EF663 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = LDAF2Z4JGC;
 						ProvisioningStyle = Automatic;
 					};
 					524A85791E228C22005EF663 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LDAF2Z4JGC;
 				INFOPLIST_FILE = WhatIsMyBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raitasola.WhatIsMyBMI;
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LDAF2Z4JGC;
 				INFOPLIST_FILE = WhatIsMyBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raitasola.WhatIsMyBMI;
