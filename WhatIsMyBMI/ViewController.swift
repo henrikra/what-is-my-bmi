@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var heightValue: UILabel!
+    @IBOutlet weak var weightSlider: UISlider!
+    @IBOutlet weak var weightValue: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func onHeightChange(_ sender: Any) {
-        heightValue.text = "\(String(Int(heightSlider.value))) cm"
+    
+    private func roundToString(sliderValue : Float) -> String {
+        return String(Int(sliderValue))
     }
 
+    @IBAction func onHeightChange(_ sender: Any) {
+        heightValue.text = "\(roundToString(sliderValue: heightSlider.value)) cm"
+    }
+
+    @IBAction func onWeightChange(_ sender: Any) {
+        weightValue.text = "\(roundToString(sliderValue: weightSlider.value)) kg"
+    }
 }
 
