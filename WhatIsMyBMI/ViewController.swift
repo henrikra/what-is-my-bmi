@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var heightSlider: UISlider!
+    @IBOutlet weak var heightValue: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onHeightChange(_ sender: Any) {
+        heightValue.text = "\(String(Int(heightSlider.value))) cm"
+    }
 
 }
 
