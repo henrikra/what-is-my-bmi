@@ -45,7 +45,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="HsK-Op-FQr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                 <state key="normal" title="Male">
                                                     <color key="titleColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -61,7 +61,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="aXH-GZ-3zr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                 <state key="normal" title="Female">
                                                     <color key="titleColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -91,7 +91,7 @@
                                             <constraint firstAttribute="height" constant="30" id="NeJ-kz-X1N"/>
                                             <constraint firstAttribute="width" constant="70" id="VPq-0Z-YL0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -102,7 +102,7 @@
                                             <constraint firstAttribute="width" constant="70" id="7hg-Nt-HXg"/>
                                             <constraint firstAttribute="height" constant="30" id="WUH-lk-BOg"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
