@@ -30,27 +30,56 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCl-IM-hgN">
-                                        <rect key="frame" x="61" y="78" width="110" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Male">
-                                            <color key="titleColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="17"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jxV-vT-JrY">
+                                        <rect key="frame" x="20" y="54.5" width="335" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCl-IM-hgN">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="35"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="HsK-Op-FQr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Male">
+                                                    <color key="titleColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQl-3k-3Qm">
+                                                <rect key="frame" x="172.5" y="0.0" width="162.5" height="35"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="aXH-GZ-3zr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Female">
+                                                    <color key="titleColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oQl-3k-3Qm" firstAttribute="height" secondItem="xCl-IM-hgN" secondAttribute="height" id="3XA-9n-sNa"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89411764705882357" green="0.21176470588235294" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Ivf-i3-aAI"/>
+                                    <constraint firstAttribute="trailing" secondItem="jxV-vT-JrY" secondAttribute="trailing" constant="20" id="WpY-73-6ty"/>
                                     <constraint firstItem="D7U-th-Je6" firstAttribute="top" secondItem="5A0-m0-iVK" secondAttribute="top" constant="25" id="ZgL-L9-MVC"/>
                                     <constraint firstItem="D7U-th-Je6" firstAttribute="leading" secondItem="5A0-m0-iVK" secondAttribute="leading" constant="20" symbolic="YES" id="bhc-DS-XbV"/>
                                     <constraint firstAttribute="trailing" secondItem="D7U-th-Je6" secondAttribute="trailing" constant="20" symbolic="YES" id="sKN-x2-UbS"/>
+                                    <constraint firstItem="jxV-vT-JrY" firstAttribute="top" secondItem="D7U-th-Je6" secondAttribute="bottom" constant="15" id="upZ-ln-rLJ"/>
+                                    <constraint firstItem="jxV-vT-JrY" firstAttribute="leading" secondItem="5A0-m0-iVK" secondAttribute="leading" constant="20" id="z4h-I0-B7a"/>
                                 </constraints>
                             </view>
                         </subviews>
