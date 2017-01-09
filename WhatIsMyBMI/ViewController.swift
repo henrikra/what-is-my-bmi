@@ -36,8 +36,7 @@ class ViewController: UIViewController {
     }
     
     private func updateBMI() {
-        let bmi = calculateBMI()
-        bmiResult.text = String(bmi)
+        bmiResult.text = String(calculateBMI())
     }
 
     @IBAction func onHeightChange(_ sender: Any) {
