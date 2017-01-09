@@ -28,15 +28,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func calculateBMI(weight : Int, height : Int) -> Double {
-        let heightInMeters = Double(height) / Double(100)
+    private func calculateBMI() -> Double {
+        let heightInMeters = Double(heightValueState) / Double(100)
         let heightSquared = pow(heightInMeters, 2.0)
-        let unRoundedBMI = Double(weight) / heightSquared
+        let unRoundedBMI = Double(weightValueState) / heightSquared
         return Double(round(10 * unRoundedBMI) / 10)
     }
     
     private func updateBMI() {
-        let bmi = calculateBMI(weight: weightValueState, height: heightValueState)
+        let bmi = calculateBMI()
         bmiResult.text = String(bmi)
     }
 
