@@ -145,14 +145,14 @@
                                     <constraint firstItem="jxV-vT-JrY" firstAttribute="leading" secondItem="5A0-m0-iVK" secondAttribute="leading" constant="20" id="z4h-I0-B7a"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMQ-Im-m21">
-                                <rect key="frame" x="16" y="420" width="60.5" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMQ-Im-m21">
+                                <rect key="frame" x="16" y="420" width="343" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="23.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtm-g5-nqe">
-                                <rect key="frame" x="16" y="490" width="70" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtm-g5-nqe">
+                                <rect key="frame" x="16" y="439.5" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.89411764709999997" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -160,13 +160,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YMQ-Im-m21" secondAttribute="trailing" id="38e-BO-Ek1"/>
                             <constraint firstItem="5A0-m0-iVK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LNw-Pv-t60"/>
+                            <constraint firstItem="Dtm-g5-nqe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NVA-8x-TQf"/>
                             <constraint firstItem="YMQ-Im-m21" firstAttribute="top" secondItem="5A0-m0-iVK" secondAttribute="bottom" constant="25" id="REA-iy-BqY"/>
                             <constraint firstItem="YMQ-Im-m21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S6f-hF-hNH"/>
                             <constraint firstItem="Dtm-g5-nqe" firstAttribute="top" secondItem="YMQ-Im-m21" secondAttribute="bottom" constant="5" id="Wa5-Vu-1QM"/>
                             <constraint firstItem="5A0-m0-iVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WtP-PO-Nrt"/>
                             <constraint firstAttribute="trailing" secondItem="5A0-m0-iVK" secondAttribute="trailing" id="rNB-2r-Eup"/>
                             <constraint firstItem="Dtm-g5-nqe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uAR-UF-pR2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dtm-g5-nqe" secondAttribute="trailing" id="utS-gA-07K"/>
+                            <constraint firstItem="YMQ-Im-m21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vnl-8f-qfo"/>
                         </constraints>
                     </view>
                     <connections>
