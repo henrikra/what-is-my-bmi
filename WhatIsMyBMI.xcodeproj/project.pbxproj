@@ -506,6 +506,7 @@
 				524A85901E228C22005EF663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		524A85911E228C22005EF663 /* Build configuration list for PBXNativeTarget "WhatIsMyBMITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				524A85931E228C22005EF663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		524A85941E228C22005EF663 /* Build configuration list for PBXNativeTarget "WhatIsMyBMIUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +524,7 @@
 				524A85961E228C22005EF663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
