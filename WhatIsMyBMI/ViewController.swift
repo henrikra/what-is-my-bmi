@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func roundToOneDecimal(unrounded : Double) -> Double {
+    private func roundToOneDecimal(unrounded: Double) -> Double {
         return Double(round(10 * unrounded) / 10)
     }
     
