@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightValue: UILabel!
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var weightValue: UILabel!
-    var heightValueState: Int?
-    var weightValueState: Int?
+    var heightValueState: Int = 170
+    var weightValueState: Int = 68
     @IBOutlet weak var bmiResult: UILabel!
 
     override func viewDidLoad() {
@@ -38,21 +38,22 @@ class ViewController: UIViewController {
         let unRoundedBMI = Double(weight) / heightSquared
         return Double(round(10 * unRoundedBMI) / 10)
     }
+    
+    private func updateBMI() {
+        let bmi = calculateBMI(weight: weightValueState, height: heightValueState)
+        bmiResult.text = String(bmi)
+    }
 
     @IBAction func onHeightChange(_ sender: Any) {
         heightValueState = Int(heightSlider.value)
         heightValue.text = "\(roundToString(sliderValue: heightSlider.value)) cm"
+        updateBMI()
     }
 
     @IBAction func onWeightChange(_ sender: Any) {
         weightValueState = Int(weightSlider.value)
         weightValue.text = "\(roundToString(sliderValue: weightSlider.value)) kg"
-    }
-    @IBAction func onCalculateButtonTap(_ sender: Any) {
-        if heightValueState != nil && weightValueState != nil {
-            let bmi = calculateBMI(weight: weightValueState!, height: heightValueState!)
-            bmiResult.text = String(bmi)
-        }
+        updateBMI()
     }
 }
 
