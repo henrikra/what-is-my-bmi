@@ -28,10 +28,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func roundToString(sliderValue : Float) -> String {
-        return String(Int(sliderValue))
-    }
-    
     private func calculateBMI(weight : Int, height : Int) -> Double {
         let heightInMeters = Double(height) / Double(100)
         let heightSquared = pow(heightInMeters, 2.0)
@@ -46,13 +42,13 @@ class ViewController: UIViewController {
 
     @IBAction func onHeightChange(_ sender: Any) {
         heightValueState = Int(heightSlider.value)
-        heightValue.text = "\(roundToString(sliderValue: heightSlider.value)) cm"
+        heightValue.text = "\(String(heightValueState)) cm"
         updateBMI()
     }
 
     @IBAction func onWeightChange(_ sender: Any) {
         weightValueState = Int(weightSlider.value)
-        weightValue.text = "\(roundToString(sliderValue: weightSlider.value)) kg"
+        weightValue.text = "\(String(weightValueState)) kg"
         updateBMI()
     }
 }
