@@ -17,6 +17,30 @@ extension UISlider {
     }
 }
 
+class TriangleView : UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func draw(_ rect: CGRect) {
+        
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        
+        context.beginPath()
+        context.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        context.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
+        context.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        context.closePath()
+        
+        context.setFillColor(red: 255.0, green: 255.5, blue: 255.0, alpha: 0.4)
+        context.fillPath()
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var heightValue: UILabel!
@@ -31,10 +55,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        heightValue.layer.masksToBounds = true
-        heightValue.layer.cornerRadius = 15
-        weightValue.layer.masksToBounds = true
-        weightValue.layer.cornerRadius = 15
+        heightValue.clipsToBounds = false
+        let heightTriangle = TriangleView(frame: CGRect(x: heightValue.bounds.midX - 7, y: heightValue.bounds.maxY, width: 14 , height: 5))
+        heightTriangle.backgroundColor = UIColor(white: 1, alpha: 0.0)
+        heightValue.addSubview(heightTriangle)
+        
+        weightValue.clipsToBounds = false
+        let weightTriangle = TriangleView(frame: CGRect(x: weightValue.bounds.midX - 7, y: weightValue.bounds.maxY, width: 14 , height: 5))
+        weightTriangle.backgroundColor = UIColor(white: 1, alpha: 0.0)
+        weightValue.addSubview(weightTriangle)
+        
         updateBMI()
     }
 
