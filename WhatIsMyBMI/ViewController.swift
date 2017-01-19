@@ -13,7 +13,7 @@ extension UISlider {
     var thumbCenterX: CGFloat {
         let _trackRect = trackRect(forBounds: self.bounds)
         let _thumbRect = thumbRect(forBounds: self.bounds, trackRect: _trackRect, value: value)
-        return _thumbRect.origin.x + _thumbRect.width / 2
+        return _thumbRect.midX + _thumbRect.width / 2
     }
 }
 
@@ -60,14 +60,14 @@ class ViewController: UIViewController {
         heightValueState = Int(heightSlider.value)
         heightValue.text = "\(String(heightValueState)) cm"
         updateBMI()
-        heightValue.center.x = heightSlider.thumbCenterX + 16
+        heightValue.center.x = heightSlider.thumbCenterX
     }
 
     @IBAction func onWeightChange(_ sender: Any) {
         weightValueState = Int(weightSlider.value)
         weightValue.text = "\(String(weightValueState)) kg"
         updateBMI()
-        weightValue.center.x = weightSlider.thumbCenterX + 16
+        weightValue.center.x = weightSlider.thumbCenterX
     }
 }
 
