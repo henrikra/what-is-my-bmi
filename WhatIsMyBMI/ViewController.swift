@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        heightValue.layer.masksToBounds = true
+        heightValue.layer.cornerRadius = 15
+        weightValue.layer.masksToBounds = true
+        weightValue.layer.cornerRadius = 15
         updateBMI()
     }
 
