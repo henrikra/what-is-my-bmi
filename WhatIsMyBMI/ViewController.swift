@@ -89,8 +89,8 @@ class ViewController: UIViewController {
     }
     
     private func activateButton(button: UIButton) {
-        let activeButton : UIButton = button == maleButton ? maleButton : femaleButton
-        let disableButton : UIButton = button == maleButton ? femaleButton : maleButton
+        let activeButton: UIButton = button == maleButton ? maleButton : femaleButton
+        let disableButton: UIButton = button == maleButton ? femaleButton : maleButton
         activeButton.backgroundColor = UIColor.white
         activeButton.setTitleColor(UIColor(red:228.0/255.0, green:54.0/255.0, blue:79.0/255.0, alpha:1.0), for: UIControlState.normal)
         disableButton.backgroundColor = UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:0.5)
