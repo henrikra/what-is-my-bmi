@@ -88,18 +88,21 @@ class ViewController: UIViewController {
         return roundToOneDecimal(unrounded: bmi)
     }
     
+    private func activateButton(button: UIButton) {
+        let activeButton : UIButton = button == maleButton ? maleButton : femaleButton
+        let disableButton : UIButton = button == maleButton ? femaleButton : maleButton
+        activeButton.backgroundColor = UIColor.white
+        activeButton.setTitleColor(UIColor(red:228.0/255.0, green:54.0/255.0, blue:79.0/255.0, alpha:1.0), for: UIControlState.normal)
+        disableButton.backgroundColor = UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:0.5)
+        disableButton.setTitleColor(UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:1.0), for: UIControlState.normal)
+    }
+    
     @IBAction func onMaleButtonTap(_ sender: Any) {
-        maleButton.backgroundColor = UIColor.white
-        maleButton.setTitleColor(UIColor(red:228.0/255.0, green:54.0/255.0, blue:79.0/255.0, alpha:1.0), for: UIControlState.normal)
-        femaleButton.backgroundColor = UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:0.5)
-        femaleButton.setTitleColor(UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:1.0), for: UIControlState.normal)
+        activateButton(button: maleButton)
     }
     
     @IBAction func onFemaleButtonTap(_ sender: Any) {
-        maleButton.backgroundColor = UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:0.5)
-        maleButton.setTitleColor(UIColor(red:255.0/255.0, green:255.0/255.0, blue:255.0/255.0, alpha:1.0), for: UIControlState.normal)
-        femaleButton.backgroundColor = UIColor.white
-        femaleButton.setTitleColor(UIColor(red:228.0/255.0, green:54.0/255.0, blue:79.0/255.0, alpha:1.0), for: UIControlState.normal)
+        activateButton(button: femaleButton)
     }
     
     private func updateBMI() {
