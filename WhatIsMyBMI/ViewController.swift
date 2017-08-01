@@ -41,6 +41,14 @@ class TriangleView : UIView {
     }
 }
 
+class CustomSlider: UISlider {
+    override func trackRect(forBounds bounds: CGRect) -> CGRect {
+        var newBounds = super.trackRect(forBounds: bounds)
+        newBounds.size.height = 10
+        return newBounds
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var heightValue: UILabel!
